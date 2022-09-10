@@ -14,7 +14,6 @@ class HomeTask2 {
         System.out.println (canWalk(false,true));
         
         //task3
-        
         System.out.println ( add ( 2, 6 ));
         System.out.println ( subtraction ( 2, 6 ));
         System.out.println ( multiplication ( 2, 6 ));
@@ -28,13 +27,13 @@ class HomeTask2 {
          
         if (temperature < 0){
             return "It's frost";
-        }else if (temperature > 0 && temperature < 18) {
+        } else if (temperature > 0 && temperature < 18) {
             return "It's cold";
-        }else if(temperature > 18 && temperature < 29) {
+        } else if (temperature > 18 && temperature < 29) {
             return "It's warm";
-        }else if(temperature >29) {
+        } else if (temperature > 29) {
             return "It's hot";
-        }else {
+        } else {
             return "";
         }
     }
