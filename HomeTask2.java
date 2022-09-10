@@ -3,11 +3,10 @@
 *
 * @author Nadzeya Yashchuk
 * @todo 07.09.2022
-* @do 11.09.2022
+* @date 10.09.2022
 */
 class HomeTask2 {
     public static void main(String[] args) {
-
         //task1
         System.out.println (checkWeather(19));
 
