@@ -8,7 +8,7 @@
 class HomeTask2 {
     public static void main(String[] args) {
         //task1
-        System.out.println (checkWeather(19));
+        System.out.println (checkWeather(-10));
 
         //task2
         System.out.println (canWalk(false,true));
@@ -23,46 +23,41 @@ class HomeTask2 {
         System.out.println ( dayOfWeek(7));
         
     }
-    static String checkWeather (int temperature){
+    static String checkWeather(int temperature){
          
         if (temperature < 0){
             return "It's frost";
-        } else if (temperature > 0 && temperature < 18) {
+        } else if (temperature <= 18) {
             return "It's cold";
-        } else if (temperature > 18 && temperature < 29) {
+        } else if (temperature <=28) {
             return "It's warm";
-        } else if (temperature > 29) {
-            return "It's hot";
         } else {
-            return "";
+            return "It's hot";
         }
     }
 
-    static boolean canWalk (boolean isRain, boolean isWeekend) {
-        if ( !isRain && isWeekend){
-            return true;
-        } else
-            {return false;
-        }
+    static boolean canWalk(boolean isRain, boolean isWeekend) {
+        boolean x = !isRain && isWeekend;
+        return x;
     }
-    static int add (int firstValue, int secondValue) {
+    static int add(int firstValue, int secondValue) {
         int result = firstValue + secondValue;
         return result ;
     }
-    static int subtraction (int firstValue, int secondValue) {
+    static int subtraction(int firstValue, int secondValue) {
         int result = firstValue - secondValue;
         return result ;
     }
-    static int multiplication (int firstValue, int secondValue) {
+    static int multiplication(int firstValue, int secondValue) {
         int result = firstValue * secondValue;
         return result ;
     }
-    static double segmentation (int firstValue, int secondValue) {
+    static double segmentation(int firstValue, int secondValue) {
         double x = firstValue;
         double result = x / secondValue;
         return result;
     }
-    static String dayOfWeek (int dayNumber) {
+    static String dayOfWeek(int dayNumber) {
         switch (dayNumber) {
         case 1:
         return "Monday";
