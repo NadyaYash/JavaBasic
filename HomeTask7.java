@@ -1,11 +1,11 @@
 import java.util.*;
 
 /**
- * Java Basic HomeTask1
+ * Java Basic HomeTask7
  *
  * @author Nadzeya Yashchuk
- * @todo 21.09.2022
- * @date 25.09.2022
+ * @todo 26.09.2022
+ * @date 30.09.2022
  */
 public class HomeTask7 {
     public static void main(String[] args) {
