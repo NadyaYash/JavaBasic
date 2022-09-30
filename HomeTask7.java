@@ -7,6 +7,7 @@ import java.util.*;
  * @todo 26.09.2022
  * @date 30.09.2022
  */
+
 public class HomeTask7 {
     public static void main(String[] args) {
 
@@ -15,7 +16,6 @@ public class HomeTask7 {
         showMap();
         showCollection();
         lotteryPart();
-
     }
 
     static void lotteryPart() {
@@ -33,7 +33,6 @@ public class HomeTask7 {
         System.out.println(arrayList);
         System.out.println(Collections.max(arrayList));
         System.out.println(Collections.min(arrayList));
-
     }
 
     static void showMap() {
