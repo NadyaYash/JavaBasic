@@ -9,7 +9,7 @@ import java.util.Scanner;
 */
 
 class HomeTask6 {
-    static char[][] table = new char[3][3];
+    public static char[][] table = new char[3][3];
     static Scanner scanner = new Scanner(System.in);
     static Random random = new Random();
     
@@ -29,7 +29,7 @@ class HomeTask6 {
             turnAI();
             printTable();
             if (isWin('o')) {
-                System.out.println("YOU WON!");
+                System.out.println("AI WON!");
                 break;
             }
             if (isTableFull()) {
@@ -41,14 +41,14 @@ class HomeTask6 {
         System.out.println("Game over!");
     }
         
-    static void init() {
+    public static void init() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 table[i][j] = '.';
             }
         }
     }
-    static void printTable() {
+    public static void printTable() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print(table[i][j] + " ");
@@ -57,7 +57,7 @@ class HomeTask6 {
         }
     }
     
-    static void turnHuman() {
+    public static void turnHuman() {
         int x,y;
         do {
             System.out.print("Enter coordinates x and y [1..3]:");
@@ -67,7 +67,7 @@ class HomeTask6 {
         table[y][x] = 'x';
     }
     
-    static void turnAI() {
+    public static void turnAI() {
                 int x,y;
         do {
             x = random.nextInt(3);
@@ -76,7 +76,7 @@ class HomeTask6 {
         table[y][x] = 'o';
     }
     
-    static boolean isCellValid(int x, int y) {
+    public static boolean isCellValid(int x, int y) {
         if (x < 0 || y < 0 || x > 2 || y > 2) {
             return false;
         }
@@ -97,7 +97,7 @@ class HomeTask6 {
         return false;
     }
     
-    static boolean isTableFull() {
+    public static boolean isTableFull() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (table[i][j] == '.') {
